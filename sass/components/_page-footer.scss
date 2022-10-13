@@ -1,0 +1,85 @@
+.page-footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    background-color: $footer-bg-color;
+
+    .address {
+            margin-right: 69px;
+        }
+
+    .links {
+            margin-right: 94px;
+        }
+}
+
+.page-footer > .container {
+    display: flex;
+    align-items: baseline;
+}
+
+.page-footer .social-link {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.location {
+    display: flex;
+    flex-direction: column;
+
+    font-style: normal;
+    line-height: 1.71;
+
+    color: $white-text-color;
+
+    .contacts {
+            color: rgba(255, 255, 255, 0.6);
+        }
+}
+
+.page-footer .logo {
+    display: block;
+    margin-bottom: 20px;
+}
+
+.logo-part.inverse {
+    color: var(--white-text-color);
+}
+
+.join {
+    display: block;
+    margin-bottom: 20px;
+
+    text-transform: uppercase;
+    color: $white-text-color;
+}
+
+.footer-form {
+    display: flex;
+}
+
+.footer-input {
+    width: 358px;
+    padding: 15px 16px;
+    margin-right: 12px;
+
+    background-color: var(--footer-bg-color);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+
+    font-size: 16px;
+    color: $white-text-color;
+}
+
+.links .item + .item {
+    margin-left: 10px;
+}
+
+.subscribe .button {
+    display: flex;
+    align-items: center;
+}
+
+.icon-send {
+    margin-left: 10px;
+}

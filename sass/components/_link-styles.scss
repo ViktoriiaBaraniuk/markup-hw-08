@@ -1,0 +1,11 @@
+.link:hover,
+.link:focus {
+    color: $accent-color;
+}
+
+.social-link:hover,
+.social-link:focus {
+    background-color: $accent-color;
+    fill: $white-text-color;
+
+}

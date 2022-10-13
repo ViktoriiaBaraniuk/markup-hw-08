@@ -1,0 +1,15 @@
+.logo {
+    font-family: $logo-font;
+    font-size: 26px;
+    line-height: 1.19;
+    text-decoration: none;
+    color: $accent-color;
+}
+
+.nav-part .logo {
+    margin-right: 85px;
+}
+
+.logo-part {
+    color: $title-text-color;
+}
