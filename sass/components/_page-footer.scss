@@ -5,17 +5,35 @@
     background-color: $footer-bg-color;
 
     .address {
+        @media screen and (max-width: 767px) {
+                margin-bottom: 60px;
+            }
+        @media screen and (min-width: $desktop) {
             margin-right: 69px;
+            }    
         }
 
     .links {
-            margin-right: 94px;
+        @media screen and (max-width: 767px) {
+                margin-bottom: 60px;
+            }
+        @media screen and (min-width: $desktop) {
+                margin-right: 94px;
+            }
+            
         }
 }
 
 .page-footer > .container {
-    display: flex;
-    align-items: baseline;
+    
+    @media screen and (max-width: 767px) {
+       text-align: center;
+    }
+
+    @media screen and (min-width: $desktop) {
+        display: flex;
+        align-items: baseline;
+    }
 }
 
 .page-footer .social-link {
@@ -31,18 +49,30 @@
 
     color: $white-text-color;
 
-    .contacts {
-            color: rgba(255, 255, 255, 0.6);
-        }
 }
 
+.location .contacts {
+    color: rgba(255, 255, 255, 0.6);
+
+    &:not(:last-child) {
+        @media screen and (max-width: 767px) {
+        margin-bottom: 8px;
+        }
+    }
+   
+}
+.exact-loc {
+    @media screen and (max-width: 767px) {
+        margin-bottom: 8px;
+    } 
+}
 .page-footer .logo {
     display: block;
     margin-bottom: 20px;
 }
 
 .logo-part.inverse {
-    color: var(--white-text-color);
+    color: $white-text-color;
 }
 
 .join {
@@ -54,13 +84,21 @@
 }
 
 .footer-form {
-    display: flex;
+
+    @media screen and (min-width: $desktop) {
+            display: flex;  
+        }
 }
 
+.footer-label {
+    @media screen and (max-width: 767px) {
+        display: block;
+        margin-bottom: 20px;
+    }
+}
 .footer-input {
-    width: 358px;
+    
     padding: 15px 16px;
-    margin-right: 12px;
 
     background-color: var(--footer-bg-color);
     border: 1px solid rgba(255, 255, 255, 0.3);
@@ -69,6 +107,16 @@
 
     font-size: 16px;
     color: $white-text-color;
+
+
+    @media screen and (min-width: $mobile) and (max-width: 1199px) {
+            width: 450px; 
+        }
+
+    @media screen and (min-width: $desktop) {
+            width: 358px;
+            margin-right: 12px;
+        }
 }
 
 .links .item + .item {
@@ -76,8 +124,10 @@
 }
 
 .subscribe .button {
-    display: flex;
-    align-items: center;
+    @media screen and (min-width: $desktop) {
+        display: flex;
+        align-items: center;
+    }
 }
 
 .icon-send {

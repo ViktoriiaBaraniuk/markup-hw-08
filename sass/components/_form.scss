@@ -1,11 +1,18 @@
 .form {
     display: flex;
     flex-direction: column;
-    width: 528px;
     padding: 40px;
 
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
+
+    @media screen and (min-width: $mobile) and (max-width: 1199px) {
+           width: 450px;
+        }
+
+    @media screen and (min-width: $desktop) {
+            width: 528px;
+        }
 
 }
 
@@ -31,6 +38,10 @@
     font-size: 20px;
     line-height: 1.17;
     text-align: center;
+
+    @media screen and (max-width: 1199px) {
+        line-height: 1.5;
+    }
 }
 
 .form-field {
@@ -140,6 +151,11 @@
 
 .policy-text {
     line-height: 1.72;
+
+    @media screen and (max-width: 1199px) {
+        font-size: 12px;
+        line-height: 1.17;
+        }
 }
 
 .form-send {
