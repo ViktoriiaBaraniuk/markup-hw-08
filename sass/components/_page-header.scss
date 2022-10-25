@@ -18,11 +18,13 @@
     }
 }
 .main-nav {
-
     @media screen and (min-width: $tablet) {
         display: flex;
-        justify-content: space-between;
         align-items: center;
+    }
+    @media screen and (min-width: $tablet) and (max-width: 1199px) {
+        justify-content: space-between;
+        
     }
     
 }
@@ -82,6 +84,9 @@
     @media screen and (min-width: $tablet) {
         display: flex;
         align-items: center;
+    }
+    @media screen and (min-width: $desktop) {
+        flex-grow: 1;
     }
 }
 
@@ -160,16 +165,15 @@
 .auth-nav {
     
     @media screen and (max-width: 767px) {
-             display: flex;
-            flex-direction: column;
-            align-items: center;
+            text-align: center;
         }
     
-        
-    .link {
+        @media screen and (min-width: $desktop) {
             display: flex;
-            align-items: center;
-    
+            margin-left: auto;
+        }
+    .link {
+             
             font-weight: 500;
             letter-spacing: 0.02em;
             color: $main-text-color;
@@ -178,16 +182,21 @@
     
             transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-            @media screen and (max-width: 767px) {
-                    font-size: 18px;
-                    line-height: 1.17;
-                }
-        }
+                @media screen and (max-width: 767px) {
+                        font-size: 18px;
+                        line-height: 1.17;
+                    }
 
+                @media screen and (min-width: $tablet) {
+                    display: flex;
+                    align-items: center;
+                    }
+
+
+            }
+           
         
 }
-
-
 
 .auth-nav .link:hover,
 .auth-nav .link:focus {

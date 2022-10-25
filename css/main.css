@@ -146,8 +146,12 @@ img {
 @media screen and (min-width: 768px) {
   .main-nav {
     display: flex;
-    justify-content: space-between;
     align-items: center;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .main-nav {
+    justify-content: space-between;
   }
 }
 
@@ -204,6 +208,11 @@ img {
   .menu-container {
     display: flex;
     align-items: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .menu-container {
+    flex-grow: 1;
   }
 }
 
@@ -276,14 +285,16 @@ img {
 
 @media screen and (max-width: 767px) {
   .auth-nav {
+    text-align: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .auth-nav {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    margin-left: auto;
   }
 }
 .auth-nav .link {
-  display: flex;
-  align-items: center;
   font-weight: 500;
   letter-spacing: 0.02em;
   color: #757575;
@@ -294,6 +305,12 @@ img {
   .auth-nav .link {
     font-size: 18px;
     line-height: 1.17;
+  }
+}
+@media screen and (min-width: 768px) {
+  .auth-nav .link {
+    display: flex;
+    align-items: center;
   }
 }
 
@@ -642,19 +659,30 @@ img {
 @media screen and (min-width: 768px) {
   .benefits .list {
     display: flex;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .benefits .list {
     flex-wrap: wrap;
     margin: -15px;
   }
 }
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .benefits .item {
+    flex-basis: calc((100% - 60px) / 2);
+    margin: 15px;
+  }
+}
 @media screen and (min-width: 1200px) {
-  .benefits .list {
+  .benefits .item {
     flex-basis: calc((100% - 90px) / 4);
   }
 }
-
-.benefits .item {
-  flex-basis: calc((100% - 60px) / 2);
-  margin: 15px;
+@media screen and (min-width: 1200px) {
+  .benefits .item:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 .benefits .subtitle {
@@ -764,13 +792,13 @@ img {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .team .item:nth-child(2n+1) {
     margin-right: 30px;
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .team .item:nth-child(-n+2) {
     margin-bottom: 30px;
   }
@@ -952,11 +980,20 @@ img {
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 768px) {
   .footer-union {
     display: flex;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer-union {
     justify-content: space-around;
     margin-bottom: 60px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-union {
+    align-items: baseline;
   }
 }
 

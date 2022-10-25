@@ -42,11 +42,20 @@
     }
 }
 .footer-union {
-    @media screen and (min-width: $tablet) and (max-width: 1199px) {
+
+    @media screen and (min-width: $tablet) {
         display: flex;
+       
+    }
+    @media screen and (min-width: $tablet) and (max-width: 1199px) {
         justify-content: space-around;
         margin-bottom: 60px;
     }
+    @media screen and (min-width: $desktop) {
+        align-items: baseline;
+    
+    }
+
 }
 .page-footer .social-link {
     background-color: rgba(255, 255, 255, 0.1);
