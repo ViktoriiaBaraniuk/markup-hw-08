@@ -8,6 +8,7 @@
 
             @media screen and (min-width: $tablet) {
                 display: flex;
+                flex-wrap: wrap;
             }
         }
 }
@@ -19,7 +20,7 @@
 
         &:not(:last-child) {
 
-            @media screen and (max-width: 1199px) {
+            @media screen and (max-width: 767px) {
                     margin-bottom: 30px;
                 }
             @media screen and (min-width: $desktop) {
@@ -29,6 +30,17 @@
         }
 
 }
+.team .item:nth-child(2n+1) {
+    @media screen and (min-width: $tablet) {
+        margin-right: 30px;
+    }
+}
+.team .item:nth-child(-n+2) {
+    @media screen and (min-width: $tablet) {
+        margin-bottom: 30px;
+    }
+}
+
 .team .item > img {
 
     @media screen and (max-width: 767px) {

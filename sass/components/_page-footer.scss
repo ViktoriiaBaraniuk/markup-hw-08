@@ -8,6 +8,9 @@
         @media screen and (max-width: 767px) {
                 margin-bottom: 60px;
             }
+        @media screen and (min-width: $tablet) and (max-width: 1199px) {
+            text-align: center;
+        }
         @media screen and (min-width: $desktop) {
             margin-right: 69px;
             }    
@@ -17,6 +20,9 @@
         @media screen and (max-width: 767px) {
                 margin-bottom: 60px;
             }
+        @media screen and (min-width: $tablet) and (max-width: 1199px) {
+            text-align: center;
+        }
         @media screen and (min-width: $desktop) {
                 margin-right: 94px;
             }
@@ -35,7 +41,13 @@
         align-items: baseline;
     }
 }
-
+.footer-union {
+    @media screen and (min-width: $tablet) and (max-width: 1199px) {
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 60px;
+    }
+}
 .page-footer .social-link {
     background-color: rgba(255, 255, 255, 0.1);
 }
@@ -91,7 +103,7 @@
 }
 
 .footer-label {
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 1199px) {
         display: block;
         margin-bottom: 20px;
     }
@@ -122,12 +134,18 @@
 .links .item + .item {
     margin-left: 10px;
 }
-
+.subscribe {
+    @media screen and (min-width: $tablet) and (max-width: 1199px) {
+        text-align: center;
+    }
+}
 .subscribe .button {
-    @media screen and (min-width: $desktop) {
         display: flex;
         align-items: center;
-    }
+
+        @media screen and (max-width: 1199px) {
+            margin: 0 auto;
+        }
 }
 
 .icon-send {

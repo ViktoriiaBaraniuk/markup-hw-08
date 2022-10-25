@@ -1,13 +1,14 @@
 .clients .list {
     display: flex;
-
     
     @media screen and (max-width: 767px) {
             flex-wrap: wrap;
-            flex-basis: calc((100% - 60px)/2);
             margin: -15px;
         }
-
+    @media screen and (min-width: $tablet) and (max-width: 1199px){
+        flex-wrap: wrap;
+        margin: -15px;
+    }
     @media screen and (min-width: $desktop) {
             justify-content: space-between;
     }
@@ -17,6 +18,11 @@
 .clients .list > li {
         @media screen and (max-width: 767px) {
             margin: 15px;
+            flex-basis: calc((100% - 60px)/2);
+        }
+        @media screen and (min-width: $tablet) and (max-width: 1199px) {
+            margin: 15px;
+            flex-basis: calc((100% - 90px)/3);
         }
     } 
 

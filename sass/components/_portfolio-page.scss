@@ -1,6 +1,6 @@
-// .page-header {
-//     border-bottom: 1px solid #ECECEC;
-// }
+.page-header.line {
+    border-bottom: 1px solid #ECECEC;
+}
 
 .portfolio .link {
     color: $main-text-color;
@@ -8,8 +8,6 @@
 
 .filter {
     display: flex;
-
-    
 
     @media screen and (max-width: 767px) {
             flex-wrap: wrap;
@@ -58,8 +56,6 @@
 }
 
 .examples .item {
-
-    
     margin-bottom: 30px;
 
     border-top-left-radius: 5px;
@@ -81,13 +77,23 @@
         
     }
 }
-
+.examples .item:last-child {
+    @media screen and (min-width: $tablet) and (max-width: 1199px) {
+        margin-bottom: 0;
+        margin-right: 0;
+    }
+}
 .examples .item:nth-child(3n) {
-    margin-right: 0;
+    @media screen and (min-width: $desktop) {
+        margin-right: 0;
+    }
+    
 }
 
 .examples .item:nth-last-child(-n + 3) {
-    margin-bottom: 0;
+    @media screen and (min-width: $desktop) {
+        margin-bottom: 0;
+    }
 }
 
 .examples-thumb {
@@ -147,6 +153,7 @@
     letter-spacing: 0.06em;
 
     color: $title-text-color;
+
 }
 
 .type {
@@ -162,6 +169,7 @@
     border-top: none;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
+        
 }
 
 .descr {

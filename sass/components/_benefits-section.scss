@@ -3,7 +3,8 @@
     @media screen and (min-width: $tablet) {
             display: flex;
             flex-wrap: wrap;
-            flex-basis: calc((100% - 60px)/2);
+            
+            margin: -15px;
         }
     @media screen and (min-width: $desktop) {
             flex-basis: calc((100% - 90px)/4);
@@ -11,18 +12,18 @@
     
 }
 
-.benefits .item:not(:last-child) {
+// .benefits .item:not(:last-child) {
 
-    @media screen and (max-width: 767px) {
-                margin-bottom: 30px;
-        }
-    @media screen and (min-width: $desktop) {
-                margin-right: 30px;
-        }
-                
-        
+//     @media screen and (max-width: 767px) {
+//                 margin-bottom: 30px;
+//         }
+// }
+.benefits .item {
+    flex-basis: calc((100% - 60px)/2);
+    margin: 15px;
+    
+    
 }
-
 .benefits .subtitle {
     margin-bottom: 10px;
 }
