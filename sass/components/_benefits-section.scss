@@ -1,10 +1,6 @@
 .benefits .list {
-
-    
         @media screen and (min-width: $tablet) {
-            display: flex;
-            
-            
+            display: flex; 
         }
         @media screen and (min-width: $tablet) and (max-width: 1199px) {
             flex-wrap: wrap;
@@ -22,6 +18,9 @@
         flex-basis: calc((100% - 90px)/4);
     }
     &:not(:last-child) {
+        @media screen and (max-width: 767px) {
+            margin-bottom: 30px;
+        }
         @media screen and (min-width: $desktop) {
            margin-right: 30px;
         }
